@@ -1,6 +1,7 @@
 * {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: 700;
 }
 
 header {
@@ -9,14 +10,28 @@ header {
 }
 
 .top {
+    display: flex;
+    justify-content: space-between;
+}
+.search {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+}
+label img {
+    width: 25px;
+    height: 25px;
 }
 
-.top label {
-    align-self: start;
+.top .right {
+    display: grid;
+    grid-template-columns: 25px 40px 125px;
+    align-items: center;
+    gap: 10px;
 }
-
-.top div {
-    align-self: end;
+.right > img[src="images/bell-ring-outline.svg"]{
+    width: 25px;
+}
+.right > img[src="images/penguin.svg"]{
+    width: 40px;
 }
