@@ -145,3 +145,7 @@ Sidebar
 .sidebar > div > img[src="images/view-dashboard.svg"] {
     width: 40px;
 }
+
+main {
+    background-color: #e7e7e7;
+}
