@@ -18,13 +18,15 @@ header {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-    padding: 0px 50px 15px 50px;
+    padding: 0px 50px 15px 30px;
+    box-shadow: 0px 0px 8px #888888;
+    position: relative;
 }
 
 /* search and profile icons */
 .top {
     display: grid;
-    grid-template-columns: minmax(100px, 1000px) 200px;
+    grid-template-columns: minmax(100px, 1fr) 200px;
     gap: 150px;
 }
 .search {
@@ -61,7 +63,7 @@ label img {
 /* bottom of header */
 .bottom {
     display: grid;
-    grid-template-columns: 60px minmax(300px, 1fr) repeat(3, 125px);
+    grid-template-columns: 60px minmax(300px, 1fr) repeat(3, 100px);
     align-items: center;
     gap: 15px;
 }
@@ -85,7 +87,8 @@ label img {
     color: white;
     border-radius: 20px;
     border-style: none;
-    padding: 10px 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #20a3ef;
 }
 
@@ -148,4 +151,7 @@ Sidebar
 
 main {
     background-color: #e7e7e7;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
